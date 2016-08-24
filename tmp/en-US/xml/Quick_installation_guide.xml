@@ -4,7 +4,6 @@
 <book>
 	<xi:include href="Book_Info.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	 <xi:include href="Chapter1.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
-	 <xi:include href="Chapter2.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 	 <xi:include href="Revision_History.xml" xmlns:xi="http://www.w3.org/2001/XInclude" />
 </book>
 
