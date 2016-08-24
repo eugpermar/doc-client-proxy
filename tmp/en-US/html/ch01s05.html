@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title xmlns:d="http://docbook.org/ns/docbook">1.5. Basic Configuration</title><link rel="stylesheet" type="text/css" href="Common_Content/css/default.css" /><link rel="stylesheet" media="print" href="Common_Content/css/print.css" type="text/css" /><meta xmlns:d="http://docbook.org/ns/docbook" name="generator" content="publican v4.3.2" /><meta xmlns:d="http://docbook.org/ns/docbook" name="package" content="redBorder_IPS-Quick_installation_guide-3-en-US-0.1-1" /><link rel="home" href="index.html" title="Quick installation guide" /><link rel="up" href="ch01.html" title="Chapter 1. Installing the redborder Enterprise Edition Manager" /><link rel="prev" href="ch01s04.html" title="1.4. Installing the ISO" /><link rel="next" href="ch01s06.html" title="1.6. Using redBorder" /></head><body><p id="title"><a class="left" href="https://fedorahosted.org/publican"><img alt="Product Site" src="Common_Content/images//image_left.png" /></a><a class="right" href="https://fedorahosted.org/publican"><img alt="Documentation Site" src="Common_Content/images//image_right.png" /></a></p><ul class="docnav top"><li class="previous"><a accesskey="p" href="ch01s04.html"><strong>Prev</strong></a></li><li class="home">Quick installation guide</li><li class="next"><a accesskey="n" href="ch01s06.html"><strong>Next</strong></a></li></ul><div class="section"><div class="titlepage"><div><div><h2 class="title"><a id="idm140260455209888">
+      ⁠</a>1.5. Basic Configuration</h2></div></div></div><div class="para">
+			Upon completing the installation process, we have two configuration options depending on whether or not there is a DHCP server.
+		</div><div xmlns:d="http://docbook.org/ns/docbook" class="orderedlist"><ol class="arabic"><li class="listitem"><div class="para">
+					<span class="bold bold"><strong>Dynamic IP (DHCP):</strong></span> in this case, redborder will have acquired an IP in its network interface and will have auto-configured in order to operate in said address.
+				</div></li><li class="listitem"><div class="para">
+					<span class="bold bold"><strong>Static IP:</strong></span> in this case redborder will not have configured and we will have to access the system in order to perform the configuration. To gain access we will use the <span class="emphasis"><em>root user</em></span> and the password we selected during the installation.
+				</div></li></ol></div><div class="mediaobject" align="center"><img src="images/ch01_img004.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Choosing the IP for the Manager installation
+			</div></div></div><div class="para">
+			Once inside the system, we will start the configuration manager. To do this we will execute:
+		</div><div class="para">
+			<code class="command">[root@rbmanager ~]# rb_sysconf</code>
+		</div><div class="para">
+			In the configuration we have several options:
+		</div><div class="mediaobject" align="center"><img src="images/ch01_img005.png" align="middle" width="450" /><div class="caption"><div class="para">
+				redborder configuration menu
+			</div></div></div><div class="para">
+			To start the configuration we begin with <code class="literal">option 1 - System configuration:</code>
+		</div><div class="mediaobject" align="center"><img src="images/ch01_img006.png" align="middle" width="450" /><div class="caption"><div class="para">
+				System Configuration
+			</div></div></div><div xmlns:d="http://docbook.org/ns/docbook" class="itemizedlist"><ul><li class="listitem"><div class="para">
+					<span class="emphasis"><em>Option 1 - Hostname:</em></span> we must enter the host name of the machine where redborder has been installed.
+				</div></li><li class="listitem"><div class="para">
+					<span class="emphasis"><em>Option 2 - Set local time:</em></span> allows us to indicate a local time for the system.
+				</div></li><li class="listitem"><div class="para">
+					<span class="emphasis"><em>Options 3 y 4:</em></span> let us configure parameters not included in this Quick Installation Guide.
+				</div></li></ul></div><div class="para">
+			Returning to the main menu, in <code class="literal">option 2 - Network configuration </code>we will have to configure everything related to the network environment:
+		</div><div class="mediaobject" align="center"><img src="images/ch01_img007.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Network Configuration
+			</div></div></div><div class="para">
+			In <code class="literal">option 1 - Management Network configuration</code>we will have the option of creating a link.
+		</div><div class="mediaobject" align="center"><img src="images/ch01_img008.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Management Network Configuration
+			</div></div></div><div class="para">
+			When we select the option <span class="keycap"><strong>n</strong></span> we are asked for:
+		</div><div xmlns:d="http://docbook.org/ns/docbook" class="itemizedlist"><ul><li class="listitem"><div class="para">
+					<span class="emphasis"><em>Insert bonding number [0]:</em></span> The default value is "0" and indicates the link index (at redBorder we use redundant links called bonding).
+				</div></li><li class="listitem"><div class="para">
+					<span class="emphasis"><em>Insert bonding number [0]:</em></span> The default value is "0" and allows us to indicate the network port index to use in the management link.
+				</div></li><li class="listitem"><div class="para">
+					<span class="emphasis"><em>Insert second port (y/N):</em></span> If only one port is needed for management, use the default value "N".
+				</div></li><li class="listitem"><div class="para">
+					<span class="emphasis"><em>Insert management IP address:</em></span> We will enter the IP that we want to assign to redborder
+				</div></li><li class="listitem"><div class="para">
+					<span class="emphasis"><em> Insert management Netmask:</em></span> We will enter the network mask that we want to assign to redborder.
+				</div></li><li class="listitem"><div class="para">
+					<span class="emphasis"><em>Insert default gateway for this management interface (Y/n):</em></span> Indicates whether or not we want to assign a link port to redborder. Por defecto indicaremos Y.
+				</div></li><li class="listitem"><div class="para">
+					<span class="emphasis"><em> Insert default gateway []:</em></span> We will enter the gateway IP address.
+				</div></li><li class="listitem"><div class="para">
+					<span class="emphasis"><em>Insert a route for this bonding (y/N):</em></span> Indicates whether or not we want to indicate a route for the link created. By default we will indicate "N".
+				</div></li></ul></div><div class="para">
+			Once the link is created, we return to the <code class="literal">Management Network configuration menu</code> and select <code class="literal">option 2 - DNS and domain settings</code> in this option we will be asked to:
+		</div><div xmlns:d="http://docbook.org/ns/docbook" class="itemizedlist"><ul><li class="listitem"><div class="para">
+					<span class="emphasis"><em>Insert Domain [redborder.cluster]: </em></span>we are asked to enter the domain which redborder will be integrating.
+				</div></li><li class="listitem"><div class="para">
+					<span class="emphasis"><em>Insert DNS Primary: </em></span> we are asked for the DNS server to be used.
+				</div></li><li class="listitem"><div class="para">
+					<span class="emphasis"><em>Insert DNS Secondary (optional):</em></span> we are asked for the secondary DNS server to be used. A secondary DNS server is not necessary by default.
+				</div></li></ul></div><div class="para">
+			Once the previous steps have been completed, we must apply the configuration with the option <span class="keycap"><strong>a - apply. </strong></span>
+		</div><div xmlns:d="http://docbook.org/ns/docbook" class="note"><div class="admonition_header"><p><strong>Note</strong></p></div><div class="admonition"><div class="para">
+				At this time we will see that several operations are executed. Please be patient because this process may be lengthy depending on the machine's hardware.
+			</div></div></div><div class="para">
+			Returning to the main menu, we have <code class="literal">option 3 - Passwords.</code> Within this option we can modify the different passwords used by default for the different users. Remember that the default password is redborder.
+		</div><div class="mediaobject" align="center"><img src="images/ch01_img009.png" align="middle" width="450" /><div class="caption"><div class="para">
+				Passwords
+			</div></div></div><div class="para">
+			Lastly, we have <code class="literal">option 4 - Backup system </code> which is outside of the scope of this Quick Installation Guide.
+		</div></div><ul class="docnav"><li class="previous"><a accesskey="p" href="ch01s04.html"><strong>Prev</strong>1.4. Installing the ISO</a></li><li class="up"><a accesskey="u" href="#"><strong>Up</strong></a></li><li class="home"><a accesskey="h" href="index.html"><strong>Home</strong></a></li><li class="next"><a accesskey="n" href="ch01s06.html"><strong>Next</strong>1.6. Using redBorder</a></li></ul></body></html>

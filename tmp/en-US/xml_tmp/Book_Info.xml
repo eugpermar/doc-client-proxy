@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE bookinfo PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY % BOOK_ENTITIES SYSTEM "manual.ent">
+<!ENTITY PRODUCT "Documentation">
+<!ENTITY BOOKID "manual">
+<!ENTITY YEAR "2016">
+<!ENTITY HOLDER "Eneo Tecnología S.L. |">
+]>
+<bookinfo id="Installation_guide">
+  <title>Quick installation guide</title>
+  <productname>IPS redborder Live</productname>
+  <productnumber>3</productnumber>
+  <edition>1</edition>
+  <pubsnumber>0</pubsnumber>
+  <abstract>
+    <para>ISBN: No available</para>
+    <para>
+      <important>
+        <title>ENEO Tecnología S.L.</title>
+        <address>
+          <street>Plaza de las Naciones s/n, Torre Norte (Edificio Aljarafe Center). Planta 12.</street>
+          <city>Mairena del Aljarafe</city>
+          <state>Sevilla</state>
+          <postcode>41927</postcode>
+          <phone> +34 955 60 11 60</phone>
+          <country>Spain</country>
+          <email>info@redborder.com</email> 
+        </address>
+      </important>
+    </para>
+  </abstract>
+  <corpauthor>
+    <inlinemediaobject>
+      <imageobject>
+        <imagedata scalefit="1" align="center" width="150" fileref="images/logo.png"/>
+      </imageobject>
+    </inlinemediaobject>
+  </corpauthor>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="Author_Group.xml"/>
+</bookinfo>
